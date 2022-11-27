@@ -49,11 +49,11 @@ public class DZ_2 {
 
         // 7
         System.out.println("7.");
-        stringCreate(s1, '=', 100);
+        stringCreate(s1, '=', 10000);
         // System.out.println(s1);
         expressionChange_2(s1, " равно ");
-        stringCreate(s1, '=', 100);
-        System.out.println(s1);
+        stringCreate(s1, '=', 10000);
+        //System.out.println(s1);
         expressionChangeWithString(s1, "равно");
 
     }
@@ -147,11 +147,11 @@ public class DZ_2 {
         long m = System.currentTimeMillis();
         for (int i = 0; i < str1.length(); i++) {
             if (str1.charAt(i) == '=') {
-                str1.replace(word, str1);
+                str1.replace("=", word);
             }
         }
         System.out.println("Delta time for String method: " + (System.currentTimeMillis() - m) + " мс");
-        System.out.println(str);
+        //System.out.println(str);
     }
 
 
