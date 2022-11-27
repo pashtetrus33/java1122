@@ -12,7 +12,7 @@
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-public class Main {
+public class DZ_1 {
     final static int MIN = -1000;
     final static int MAX = 1000;
 
