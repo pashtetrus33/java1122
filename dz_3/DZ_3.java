@@ -15,7 +15,7 @@ import java.util.List;
 // 8. Создать новый список и добавить в него несколько елементов первого списка.
 // 9. Удалить из первого списка все элементы отсутствующие во втором списке.
 // 10. *Сортировка списка.
-// 11. *Сравнить время работы пункта 3 для ArrayList и LinkedList.
+// 11. *Сравнить время работы пункта 3 для 1000 повторений ArrayList и LinkedList.
 
 public class DZ_3 {
     public static void main(String[] args) {
@@ -89,15 +89,20 @@ public class DZ_3 {
         List<String> arLL1 = new LinkedList<>();
         arLL1.add("White");
         arLL1.add("Green");
-       
-        long t1 = System.nanoTime();
-        arL1.add(1, "Black!");
-        System.out.println("11. Time for add element in ArrayList: " + (System.nanoTime() - t1) + " nanoseconds" );
 
+        long t1 = System.nanoTime();
+        for (int index = 0; index < 1000; index++) {
+            arL1.add(1, "Black!");
+        }
+
+        System.out.println("11. Time for add element in ArrayList: " + (System.nanoTime() - t1) + " nanoseconds");
 
         t1 = System.nanoTime();
-        arLL1.add(1, "Black!");
-        System.out.println("11. Time for add element in LinkedList: " + (System.nanoTime() - t1) + " nanoseconds" );
+        for (int index = 0; index < 1000; index++) {
+            arLL1.add(1, "Black!");
+        }
+
+        System.out.println("11. Time for add element in LinkedList: " + (System.nanoTime() - t1) + " nanoseconds");
 
     }
 
