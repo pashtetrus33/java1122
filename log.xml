@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1251" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-27T17:09:22.973131300Z</date>
+  <millis>1669568962973</millis>
+  <nanos>131300</nanos>
+  <sequence>0</sequence>
+  <logger>Seminar3.Seminar3</logger>
+  <level>WARNING</level>
+  <class>Seminar3.Seminar3</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Test logging 1</message>
+</record>
+<record>
+  <date>2022-11-27T17:09:23.092318900Z</date>
+  <millis>1669568963092</millis>
+  <nanos>318900</nanos>
+  <sequence>1</sequence>
+  <logger>Seminar3.Seminar3</logger>
+  <level>INFO</level>
+  <class>Seminar3.Seminar3</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Test logging 2</message>
+</record>
+</log>
